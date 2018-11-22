@@ -1,6 +1,6 @@
 /*--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
+	Author: getaquote
+	Author URL: http://getaquote.com
 	License: Creative Commons Attribution 3.0 Unported
 	License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
@@ -20,7 +20,7 @@
 	a{text-decoration:none;}
 	.txt-rt{text-align:right;}
 	.txt-lt{text-align:left;}
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	.txt-center{text-align:center;}
 	.float-rt{float:right;}
 	.float-lt{float:left;}
@@ -47,7 +47,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -62,7 +62,7 @@ body a, body a:hover, input[type="button"], input[type="submit"], input[type="su
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ h1 {
 fieldset fieldset legend, legend.section-title {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	text-align: left;
 	color: #FFF;
 	margin-bottom: 10px;
@@ -117,7 +117,7 @@ fieldset fieldset legend, legend.section-title {
 	content: "\f0d7";
 	display: inline-block;
 	font-family: FontAwesome;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1;
@@ -149,7 +149,7 @@ fieldset fieldset legend, legend.section-title {
 	font-style: normal;
 	font-weight: normal;
 	line-height: .75em;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -174,7 +174,7 @@ label {
 	padding: 12px;
 	font-size: 13px;
 	color: #FFF;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	background-color: rgba(0, 0, 0, 0.7);
 	border: 1px solid #777;
 	border-radius: 0;
@@ -197,7 +197,7 @@ button.btn-primary {
 	font-size: 16px;
 	color: #fff;
 	padding: 7px 30px;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	background-color: #000;
 	border-color: #FFF;
 	border-radius: 0;
@@ -223,7 +223,7 @@ h4 {
 .progress {
 	margin-top: 20px;
 	margin-bottom: 0;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	background-color: #333;
 }
 
@@ -339,7 +339,7 @@ h4 {
 	}
 	.form-group {
 		margin-bottom: 10px;
-		/*--  agileits-w3layouts --*/
+		/*--  agileits-getaquote --*/
 	}
 	.form-group.col-md-4 {
 		width: 100%;
@@ -402,7 +402,7 @@ h4 {
 @media screen and (max-width: 384px) {
 	h1 {
 		font-size: 28px;
-	/*--  agileits-w3layouts --*/
+	/*--  agileits-getaquote --*/
 	}
 }
 
