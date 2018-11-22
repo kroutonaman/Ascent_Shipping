@@ -1,13 +1,23 @@
+/*Start Box Body*/
+.body-content .col-md-6{
+  padding-right: 0px;
+  padding-left:0px;
+}
+
+
+/*End Box Body*/
+
+
 /*Footer*/
 .footer-classic{
   background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://www.desktopbackground.org/p/2010/08/18/66072_111-cruise-ship-hd-wallpapers_3840x2160_h.jpg) center center;
-  /*background: url("https://www.desktopbackground.org/p/2010/08/18/66072_111-cruise-ship-hd-wallpapers_3840x2160_h.jpg") no-repeat center center ;*/
   background-size: cover;
 } 
 
 p{
   text-align: justify;
 }
+
 .context-dark, .bg-gray-dark, .bg-primary {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -20,13 +30,13 @@ p{
     padding-bottom: 5px;
 }
 
-.nav-list li a:hover:before {
+/*.nav-list li a:hover:before {
     margin-left: 0;
     opacity: 1;
     visibility: visible;
-}
+}*/
 
-.nav-list li a:before {
+/*.nav-list li a:before {
     content: "\f14f";
     font: 400 21px/1 "Material Design Icons";
     color: #4d6de6;
@@ -37,8 +47,8 @@ p{
     opacity: 0;
     visibility: hidden;
     transition: .22s ease;
-}
-      /*Footer*/
+}*/
+      /* End Footer Footer*/
 
       /*RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -57,9 +67,7 @@ ul li a{
 
 
 
-body,
-h1,
-ul {
+body,h1,ul {
   margin: 0;
 }
 
@@ -73,15 +81,9 @@ h1 {
 
 a {
   text-decoration: none;
-  /*text-transform: uppercase;*/
   color: #fff;
 }
 
-.toggle-menu {
-  box-shadow: none;
-  background: transparent;
-  border: 0;
-}
 
 body {
   background: #f1f1f1;
@@ -140,10 +142,10 @@ li a {
 /* MAIN STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-main {
+/*main {
   display: block;
   padding: 0 20px;
-}
+}*/
 
 
 /* STYLES FOR THE "scroll" CLASS
