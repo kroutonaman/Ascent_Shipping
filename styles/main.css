@@ -100,7 +100,7 @@ font-family: 'Black Han Sans', sans-serif;
 
 header {
   z-index: 1000;
-  position: fixed;
+  /*position: fixed;*/
   height: 100px;
   top: 0;
   width: 100%;
