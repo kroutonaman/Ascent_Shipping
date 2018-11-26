@@ -1,12 +1,11 @@
+
 /*Start Box Body*/
 .body-content .col-md-6{
   padding-right: 0px;
   padding-left:0px;
 }
 
-
 /*End Box Body*/
-
 
 /*Footer*/
 .footer-classic{
@@ -33,25 +32,6 @@ p{
     padding-bottom: 5px;
 }
 
-/*.nav-list li a:hover:before {
-    margin-left: 0;
-    opacity: 1;
-    visibility: visible;
-}*/
-
-/*.nav-list li a:before {
-    content: "\f14f";
-    font: 400 21px/1 "Material Design Icons";
-    color: #4d6de6;
-    display: inline-block;
-    vertical-align: baseline;
-    margin-left: -28px;
-    margin-right: 7px;
-    opacity: 0;
-    visibility: hidden;
-    transition: .22s ease;
-}*/
-      /* End Footer Footer*/
 
       /*RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -67,7 +47,6 @@ ul li a{
 .menu_items ul{
  font-family: 'Titillium Web', sans-serif;
 }
-
 
 
 body,h1,ul {
@@ -94,7 +73,6 @@ body {
 font-family: 'Black Han Sans', sans-serif;
 }
 
-
 /* HEADER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -106,14 +84,7 @@ header {
   width: 100%;
   box-sizing: border-box;
   background: #022638;
-  /*background: #0a1217;*/
-  /*background: #333;*/
-  /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
-  /*background-image: linear-gradient(to right, #434343 0%, black 100%);*/
-  font-weight: bold;
 }
-
-
 
 nav {
   display: flex;
@@ -146,14 +117,6 @@ li a {
   transition: margin .2s;
 }
 
-
-/* MAIN STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/*main {
-  display: block;
-  padding: 0 20px;
-}*/
 
 
 /* STYLES FOR THE "scroll" CLASS
