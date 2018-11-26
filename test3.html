@@ -22,7 +22,220 @@
   
       <style>
 
-     
+      /*Footer*/
+      .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+      /*Footer*/
+
+      /*RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul li a{
+  text-transform: uppercase;
+}
+
+.menu_items ul{
+  padding-top: 15px;
+
+}
+
+.menu_items ul{
+ font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+body,
+h1,
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  color: #fff;
+}
+
+.toggle-menu {
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+}
+
+body {
+  background: #f1f1f1;
+  color: #272626;
+font-family: 'Black Han Sans', sans-serif;
+}
+
+
+/* HEADER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+  z-index: 1000;
+  position: fixed;
+  height: 100px;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #DD3543;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transition: align-items .2s;
+ margin-top: -50px;
+}
+
+ul {
+  display: flex;
+  /*margin: 50px 50px 0 0;*/
+  padding: 0;
+  transition: margin .2s;
+}
+
+li:not(:last-child) {
+  margin-right: 20px;
+}
+
+li a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.toggle-menu {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  margin: 10px 10px 0 0;
+  transition: margin .2s;
+}
+
+
+/* MAIN STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+main {
+  display: block;
+  padding: 0 20px;
+}
+
+
+/* STYLES FOR THE "scroll" CLASS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scroll {
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, .1);
+}
+
+.scroll .logo {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.scroll nav {
+  align-items: center;
+}
+
+.scroll .logo,
+.scroll ul,
+.scroll .toggle-menu {
+  margin: 0;
+}
+
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 1060px) {
+  header {
+    padding: 10px;
+  }
+  nav {
+    align-items: center;
+  }
+  ul {
+    display: none;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin: 10px 0 0 10px;
+  }
+  .toggle-menu {
+    display: block;
+  }
+}
+
+
+/* STYLES FOR THE COUNTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.counter {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1px;
+  padding: 5px;
+  color: #fff;
+  background: #DD3543;
+}
+
+h1 a img{
+  height: 91px;
+  width: 225px;
+  padding-left: 20px;
+}
+
+ .nav_items li a:hover{
+   text-decoration: none;
+   background-color: rgba(0, 0, 0, 0.4);
+   border-radius: 10px;
+   /*opacity:0.4;*/
+   color:#fff;
+   font-weight: bold;
+}
 </style>
 
 
@@ -42,17 +255,17 @@
     </div>
   <nav>
     <h1>
-      <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+      <a href=""><img src="assets/logo.png" class="logo"></a>
     </h1>
     <div class="menu_items"></div>
     <span class="nav_items">
     <ul style="padding-left: 150px;">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services </a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Services </a></li>
-      <li><a href="#">Portfolio</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Services </a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Services </a></li>
+      <li><a href="">Portfolio</a></li>
     </ul></span>
     <button class="toggle-menu" aria-label="Responsive Navigation Menu">☰</button>
   </nav>
@@ -65,6 +278,11 @@
   </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
 
   </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
+
+  </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
+
+  </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
+
   
 </main>
 
@@ -80,7 +298,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <h3>Contacts</h3>
+              <h5>Contacts</h5>
               <dl class="contact-list">
                 <dt>Address:</dt>
                 <dd>798 South Park Avenue, Jaipur, Raj</dd>
@@ -96,7 +314,7 @@
               </dl>
             </div>
             <div class="col-md-4 col-xl-3">
-              <h3>Links</h3>
+              <h5>Links</h5>
                 <dl class="contact-list">
                 <dt>Address:</dt>
                 <dd>798 South Park Avenue, Jaipur, Raj</dd>
@@ -115,8 +333,13 @@
         </div>
         
       </footer>
+    
 
-    <script>
+  
+
+  
+
+    <script >
 //       (function() {
 
 //   'use strict';
