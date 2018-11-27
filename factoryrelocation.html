@@ -15,6 +15,49 @@
       <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
       <style>
+/*for button get a quote*/
+.cross_line{
+    display: inline-block;
+    position: relative;
+    padding: 1.5em 6em;
+    border-top: solid 2px #000;
+    border-bottom: solid 2px #000;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    margin-left: 85px;
+    text-decoration: none !important;
+
+}
+#quote{
+  font-size: 20px;
+}
+
+.cross_line:before, .cross_line:after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color:#000;
+  transition: .8s;
+}
+.cross_line:before {left: 25px;}
+.cross_line:after {right: 25px;}
+.cross_line:hover:before{
+  top: 0px;
+  left:0;
+  height: 100%;
+}
+.cross_line:hover:after{
+  top: 0px;
+  right: 0;
+  height: 100%;
+}
+
+
+/*End*/
 
 
   html{
@@ -28,11 +71,16 @@
   .ocean_freight{
     padding:30px 40px 30px 0;
     font-size: 20px;
+    background-color: #fff;
   }
 
   .ocean_freight h2{
     font-weight: 700;
     color:#022638;
+  }
+
+  .row_one{
+    background-color: #fff;
   }
  
 /*SideBar Nav*/
@@ -97,7 +145,7 @@
 }
 
 .ocean_freight li::before{
-  content:url("assets/arrow.png");
+  content:url("assets/dot.png");
 }
 
 div.content {
@@ -190,7 +238,7 @@ div.content {
         <h2>Machinery and factory relocation </h2>
         <p>Ascent offers safe, professional installation/relocation of factory machinery. This process starts with a consultation and carries through to commissioning. Our team will work with you to understand your goal, timeline, and budget and develop a complete project plan.  We then provide you with a detailed quote and set clear expectations. Once the work begins Ascent’s experienced tradesmen will take care of it all.  We partner with well experienced vendors for transporting machines, full site relocations, original equipment manufacturers and end-users in any of industries taking total responsibility for ensuring the success of any project we undertake. 
         </p>
-        <p>Service includes.  </p>
+        <p><b>Service includes.</b></p>
         <ul>
           <li>&nbsp;&nbsp;Full site survey </li>
           <li>&nbsp;&nbsp;Detailed plans and schedule for all machine moves</li>

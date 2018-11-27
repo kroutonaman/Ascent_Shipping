@@ -15,6 +15,50 @@
       <link rel="stylesheet" type="text/css" href="styles/main.css">
       <style>
 
+/*for button get a quote*/
+.cross_line{
+    display: inline-block;
+    position: relative;
+    padding: 1.5em 6em;
+    border-top: solid 2px #000;
+    border-bottom: solid 2px #000;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    margin-left: 85px;
+    text-decoration: none !important;
+
+}
+#quote{
+  font-size: 20px;
+}
+
+.cross_line:before, .cross_line:after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color:#000;
+  transition: .8s;
+}
+.cross_line:before {left: 25px;}
+.cross_line:after {right: 25px;}
+.cross_line:hover:before{
+  top: 0px;
+  left:0;
+  height: 100%;
+}
+.cross_line:hover:after{
+  top: 0px;
+  right: 0;
+  height: 100%;
+}
+
+
+/*End*/
+
 
   html{
     overflow-x: hidden;
@@ -27,6 +71,7 @@
   .ocean_freight{
     padding:30px 40px 30px 0;
     font-size: 20px;
+    background-color: #ffffff;
   }
 
   .ocean_freight h2{
@@ -39,6 +84,7 @@
 @media(max-width: 400px){
   .row_one{
     margin-left: -50px;
+    background-color: #fff;
   }
 
   .content{
@@ -67,7 +113,7 @@
   margin: 50px 70px;
   padding: 0;
   width: 330px;
-  background-color: #f1f1f1;
+  background-color:#fff;
   height: 100%;
   overflow: auto;
   border:2px solid #022638;
@@ -157,7 +203,8 @@ div.content {
       </section>
 
       <div class="row row_one">
-        <div class="col-md-5 col-sm-12 sidebar">
+        <div class="col-md-4 col-sm-12">
+          <div class="sidebar">
           <a  href="services.html">Ocean Freight <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a class="active" href="airfreight.html">Air Freight <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="importexport.html">Import/Export Services <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
@@ -165,12 +212,14 @@ div.content {
           <a href="export.html">Export services<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="insurance.html">Cargo Insurance<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
         </div>
+        <p><a href="getaquote.html" class="cross_line"><span id="quote"> Get a quote</span></a></p>
+      </div>
 
-      <div class="ocean_freight" class="col-md-7 col-sm-12 content">
+      <div class="ocean_freight col-md-8 col-sm-12 content" class="">
         <h2>Air Freight</h2>
         <p>Through our extensive network of commercial and/or charter air carriers, we can provide the most effective and efficient routing for your air cargo, as well as direct passenger and freighter flights throughout international trade lanes. Nearly any size and type of cargo are accepted – from small parcel to large project cargo, hazardous cargo and more – and can be forwarded from any origin to any destination. </p>
 
-        <p>Air-freight services include:: </p>
+        <p><b>Air-freight services include:</b> </p>
 
         <ul>
           <li>&nbsp;&nbsp;24/7 staff availability</li>
