@@ -524,14 +524,20 @@ h1 a img{
 
 }
 .sepimg15{
-      height: 182px;
-    width: 182px;
-    margin: 18px;
-    padding: 83px;
+     height: 196px;
+    width: 196px;
+    margin: 50px 14px;
+    
     background-image: url(../assets/bg.jpg);
     display: inline-block;
-    transition: background 1.2s;
-    transition: 1.2s;
+    -webkit-transition: width 2s, height 2s; 
+    transition: width 2s, height 2s;
+
+}
+.sepimg15 :hover{
+  background-color: #7f7f7fb3;
+  width: 196px;
+  height: 196px;
 
 }
 .main_list_box .sepimg16{
