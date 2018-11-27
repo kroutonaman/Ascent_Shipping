@@ -81,7 +81,7 @@ header {
   width: 100%;
   box-sizing: border-box;
 
-  background: #f7f7f7;
+  background: #ffffff;
  
   font-weight: bold;
 
@@ -523,13 +523,15 @@ h1 a img{
    transition: 1.2s;
 
 }
-.main_list_box .sepimg15{
-   height: 200px;
-   width: 200px;
-    background-image: url('../assets/Break Bulk on Liner vessel.jpg');
-   display:inline-block;
-   transition: background 1.2s;
-   transition: 1.2s;
+.sepimg15{
+      height: 182px;
+    width: 182px;
+    margin: 18px;
+    padding: 83px;
+    background-image: url(../assets/bg.jpg);
+    display: inline-block;
+    transition: background 1.2s;
+    transition: 1.2s;
 
 }
 .main_list_box .sepimg16{
