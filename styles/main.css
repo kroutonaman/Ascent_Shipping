@@ -46,11 +46,6 @@ ul li a{
 
 }
 
-.menu_items ul{
- font-family: 'Titillium Web', sans-serif;
-}
-
-
 body,h1,ul {
   margin: 0;
 }
@@ -72,7 +67,7 @@ a {
 body {
   background: #f1f1f1;
   color: #272626;
-font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Bitter', serif;
 }
 
 /* HEADER STYLES
