@@ -16,8 +16,52 @@
       <link rel="stylesheet" type="text/css" href="styles/main.css">
       <style>
 
+/*Testing for button*/
+/*for button get a quote*/
+.cross_line{
+    display: inline-block;
+    position: relative;
+    padding: 1.5em 6em;
+    border-top: solid 2px #000;
+    border-bottom: solid 2px #000;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    margin-left: 85px;
+    text-decoration: none !important;
 
-  html{
+}
+#quote{
+  font-size: 20px;
+}
+
+.cross_line:before, .cross_line:after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color:#000;
+  transition: .8s;
+}
+.cross_line:before {left: 25px;}
+.cross_line:after {right: 25px;}
+.cross_line:hover:before{
+  top: 0px;
+  left:0;
+  height: 100%;
+}
+.cross_line:hover:after{
+  top: 0px;
+  right: 0;
+  height: 100%;
+}
+
+
+/*End*/
+ 
+    html{
     overflow-x: hidden;
   }
 
@@ -27,7 +71,7 @@
 
   .ocean_freight{
     padding:30px 40px 30px 0;
-    font-size: 20px;
+    font-size:19px;
   }
 
   .ocean_freight h2{
@@ -97,7 +141,11 @@
 }
 
 .ocean_freight li::before{
-  content:url("assets/arrow.png");
+  content:url("assets/dot.png");
+}
+
+.row_one{
+  background-color: #fff;
 }
 
 div.content {
@@ -158,24 +206,33 @@ div.content {
       </section>
 
       <div class="row row_one">
+       
         <div class="col-md-5 col-sm-12 sidebar">
+           <div>
           <a class="active" href="services.html">Ocean Freight <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="airfreight.html">Air Freight <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="importexport.html">Import/Export Services <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="transport.html">Transport Services <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="export.html">Export services <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="insurance.html">Cargo Insurance<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
+            <!--以下pocket-->
+        </div>
+          <!-- <a href="#" class="isometric" style="text-decoration: none;">
+              <span class="iconback ispkt"><i class="fa fa-get-pocket"></i></span><span class="btnttl">Get a Quote</span>
+          </a> -->
         </div>
 
+         
 
-      <div class="ocean_freight" class="col-md-7 col-sm-12 content">
+
+      <div class="ocean_freight col-md-7 col-sm-12 content">
         <h2>International Freight Management</h2>
         <p>Be it working as your 3PL or 4PL partner. Ascent services include total logistics management, air and ocean freight forwarding, inland ground and rail services, project cargo and project management, import/export and cross trade services, customs clearance and paper works, warehousing and distribution, global trade compliance services and logistics and technology solutions. </p>
 
         <h2>Ocean Freight</h2>
         <p>Ascent offer a full range of ocean freight services direct with carrier as forwarder or as a NVOCC for any/all less-than-containerload (LCL), full-containerload (FCL), oversized and hazardous cargo, Roll-on/Roll-off (Ro/Ro) and more from any origin to any destination. </p>
 
-        <p>Full services include: </p>
+        <p><b>Services include:</b></p>
 
         <ul>
           <li>&nbsp;&nbsp;FCL</li>
@@ -196,6 +253,8 @@ div.content {
           <li>&nbsp;&nbsp;Purchase order (P.O.) management</li>
           <li>&nbsp;&nbsp;Web-based, in-transit visibility</li> 
         </ul>
+
+
        
       </div>
     </div>
