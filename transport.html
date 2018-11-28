@@ -89,42 +89,22 @@
  
 /*SideBar Nav*/
 
-@media(max-width: 400px){
-  .row_one{
-    margin-left: -50px;
-  }
-
-  .content{
-    margin-left: 70px;
-  }
-
-  .sidebar{
-    margin:12px 47px;
-  }
-}
-
-@media(max-width: 700px){
- 
-  .ocean_freight{
-    margin-left:50px;
-  }
-
-  .ocean_freight ul{
-    margin-left: 50px;
-  }
-
-}
 
 
 .sidebar {
-  margin: 50px 70px;
+  margin: 50px 9px;
   padding: 0;
-  width: 330px;
+  /*width: 330px;*/
+  width:90%;
   background-color: #f1f1f1;
   height: 100%;
   overflow: auto;
   border:2px solid #022638;
 }
+
+
+
+
 
 .sidebar a {
   display: block;
@@ -222,7 +202,7 @@ div.content {
            <p><a href="getaquote.html" class="cross_line"><span id="quote"> Get a quote</span></a></p>
         </div>
         
-      <div class="ocean_freight" class="col-md-8 col-sm-12 content" >
+      <div class="col-md-8 col-sm-12 content ocean_freight" >
         <h2>Transport Services</h2>
         <p>Ascent excels pick up and Drop service worldwide for containerised and, Over dimension Movement, with vehicles available 24/7 in all our locations and agent locations, Rail movements interstate, ounties or even inter continent, for any cargo size from small box to Mega Equipments.</p>
 
@@ -297,4 +277,50 @@ div.content {
          </div>
       </footer>
    </body>
+
+
+
+<style>
+
+@media screen and (max-width: 365px){
+  .sidebar{
+    margin:9px 0px;
+    width: 100%;
+  }
+  .cross_line {
+    margin-left: -17px;
+  }
+  .ocean_freight {
+    margin-left: 16px;
+  }
+  div.content {
+  padding: 1px 10px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .ocean_freight ul{
+    margin-left: 50px;
+  }
+  .ocean_freight h2{
+    margin-left: 20px;
+  }
+  .ocean_freight p{
+    margin-left: 20px;
+  }
+  .sidebar{
+    width: 100%;
+    margin:50px 0;
+  }
+  .cross_line {
+    left: 18%;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .sidebar{
+    margin: 52px 52px;
+  }
+}
+</style>
 </html>
