@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+
+
+
+
+ .animate-arrow {
+    left: 10px;
+    padding: 1px 265px !important;
+
+}
+
+.firstsec-title {
+    text-align: center;
+    margin: 62px 0px;
+    padding: 100px 0px;
+    color: #ffffff;
+}
+
+.firstsection {
+    background: linear-gradient(0deg,rgba(2,38,56,0.8),rgba(0,0,0,0.8)),url(assets/Shipping-Banner12.jpg) center center;
+    height: 265px !important;
+}
+
+.home-doctors {
+    padding: 8px 7px 5px 1px;
+    display: inline-block;
+}
+
+
+}

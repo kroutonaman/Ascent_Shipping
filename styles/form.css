@@ -8,7 +8,7 @@ fieldset fieldset legend, legend.section-title {
   font-size: 20px;
   /*--  agileits-w3layouts --*/
   text-align: left;
-  color: #FFF;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -55,7 +55,7 @@ fieldset fieldset legend, legend.section-title {
 label {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #CCC;
+  color: #000000;
   margin-bottom: 5px;
 }
 
@@ -70,15 +70,14 @@ label {
 
 .form-control {
   padding: 12px;
-  font-size: 13px;
-  color: #FFF;
-  /*--  agileits-w3layouts --*/
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid #777;
-  border-radius: 0;
-  box-shadow: none;
-  height: inherit;
-  line-height: 0;
+    font-size: 13px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #d5d5d5;
+    border-radius: 0;
+    box-shadow: none;
+    height: inherit;
+    line-height: 0;
 }
 
 fieldset {
@@ -169,7 +168,11 @@ h4 {
 }
 .form-title {
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     margin: 0 0 58px 0;
-    padding-top: 104px;
+    padding-top: 175px;
+}
+.col-md-6, .container-fluid {
+    padding-right: 9px;
+    padding-left: 9px;
 }
