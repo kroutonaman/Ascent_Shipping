@@ -15,8 +15,6 @@
       <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
       <style>
-
-/*Testing for button*/
 /*for button get a quote*/
 .cross_line{
     display: inline-block;
@@ -60,64 +58,51 @@
 
 
 /*End*/
- 
-    html{
+
+  html{
     overflow-x: hidden;
   }
 
+  body{
+    font-family: 'Bitter', serif;
+
+  }
   .ocean_freight ul{
     display: inline-table;
   }
 
   .ocean_freight{
     padding:30px 40px 30px 0;
-    font-size:19px;
+    font-size: 20px;
   }
 
   .ocean_freight h2{
     font-weight: 700;
     color:#022638;
   }
+
+  .row_one{
+    background-color:#fff;
+  }
  
 /*SideBar Nav*/
 
-@media(max-width: 400px){
-  .row_one{
-    margin-left: -50px;
-  }
-
-  .content{
-    margin-left: 70px;
-  }
-
-  .sidebar{
-    margin:12px 47px;
-  }
-
-}
-
-@media(max-width: 700px){
- 
-  .ocean_freight{
-    margin-left:50px;
-  }
-
-  .ocean_freight ul{
-    margin-left: 50px;
-  }
-
-}
 
 
 .sidebar {
-  margin: 50px 70px;
+  margin: 50px 9px;
   padding: 0;
-  width: 330px;
+  /*width: 330px;*/
+  width:90%;
   background-color: #f1f1f1;
   height: 100%;
   overflow: auto;
   border:2px solid #022638;
 }
+
+
+
+
 
 .sidebar a {
   display: block;
@@ -145,10 +130,6 @@
   content:url("assets/dot.png");
 }
 
-.row_one{
-  background-color: #fff;
-}
-
 div.content {
   padding: 1px 16px;
 }
@@ -169,6 +150,7 @@ div.content {
   transform: translate(-50%, -50%);
   color: white;
 }
+
 
 </style>
    </head>
@@ -305,4 +287,54 @@ div.content {
          </div>
       </footer>
    </body>
+
+   <style>
+@media screen and (max-width: 365px){
+  .sidebar{
+    margin:9px 0px;
+    width: 100%;
+  }
+  .cross_line {
+    margin-left: -17px;
+  }
+  .ocean_freight {
+    margin-left: 16px;
+  }
+  div.content {
+  padding: 1px 10px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .ocean_freight ul{
+    margin-left: 50px;
+  }
+  .ocean_freight h2{
+    margin-left: 20px;
+  }
+  .ocean_freight p{
+    margin-left: 20px;
+  }
+  .sidebar{
+    width: 100%;
+    margin:50px 0;
+  }
+  .cross_line {
+    left: 18%;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .sidebar{
+    margin: 52px 52px;
+  }
+}
+
+
+@media screen and (min-width:1200px){
+    p{
+    padding-right: 15px;
+  }
+}
+   </style>
 </html>
