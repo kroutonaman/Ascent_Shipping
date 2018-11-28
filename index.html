@@ -31,13 +31,13 @@ ul li a {
     color: #022638;
 }
 .asidesection{
-  background-image: url(assets/projecthome.jpg);
+  background: linear-gradient(0deg,rgba(198, 200, 202, 0.8),rgba(0, 0, 0, 0.8)),url(assets/projecthome.jpg) center center;
   padding: 75px 10px;
   
 
 }
 .firstsection{
-  background-image: url(assets/bg.jpg);
+   background:linear-gradient(0deg,rgba(2,38,56,0.8),rgba(0,0,0,0.8)),url(assets/Shipping-Banner12.jpg) center center;
   height: 600px;
   
   
@@ -52,7 +52,7 @@ ul li a {
     text-align: center;
     color: #ffffff;
 }
- @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+ 
 
 
 
@@ -110,6 +110,59 @@ ul li a {
   opacity: 1;
 }
 
+.chevron {
+ position: absolute;
+    width: 30px;
+    height: 5px;
+    color: #ffffff;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+}
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+.chevron:before, .chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #ffffff;
+}
+.chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+.animate-arrow{
+      left: 10px;
+    padding: 1px 196px;
+}
 
 /*=============== //Home-team ===============*/
 </style>
@@ -155,19 +208,31 @@ ul li a {
    margin-top: 50px;">
   <div class="col-md-12">
   
-    <div id="one" class="col-md-4">
+    <div id="numberone" class="col-md-4 numberone">
          <h2>INTERNATIONAL FREIGHT MGMT </h2>
-         <span class="glyphicon glyphicon-chevron-down" style="font-size: 40px;"></span>
+         <div class="animate-arrow">
+         <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
     </div>
 
-    <div id="two" class="col-md-4">
+    <div id="numbertwo" class="col-md-4 numbertwo">
         <h2>PROJECT CARGO WORLDWIDE </h2>
-        <span class="glyphicon glyphicon-chevron-down" style="font-size: 40px;"></span>
+         <div class="animate-arrow">
+         <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
     </div>
 
-    <div id="three" class="col-md-4">
+    <div id="numberthree" class="col-md-4 numberthree">
         <h2>LINER AGENCY</h2>
-        <span class="glyphicon glyphicon-chevron-down" style="font-size: 40px;"></span>
+         <div class="animate-arrow">
+         <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
     </div>
     </div>
 </section>
@@ -175,9 +240,9 @@ ul li a {
 
 
 
- <section >
+ <section id="numberone">
 
-     <div class="col-md-6 firstsection">
+     <div id="proj1" class="col-md-6 firstsection">
      <div class="firstsec-title">
       <h2>International Freight Management</h2> 
 
@@ -280,12 +345,12 @@ ul li a {
     
       </section>
        
- <section >
+ <section id="numbertwo" >
 
     
    
    
-    <div class="col-md-6 asidesection">
+    <div id="proj2" class="col-md-6 asidesection">
       <div class="1stpart">
        
        <div class="col-md-4 doc-item  home-doctors">
@@ -384,9 +449,9 @@ ul li a {
     </div>
    </div>
       </section>
- <section >
+ <section id="numberthree" >
 
-     <div class="col-md-6 firstsection">
+     <div id="proj3" class="col-md-6 firstsection">
      <div class="firstsec-title">
       <h2>International Freight Management</h2> 
 
@@ -543,21 +608,21 @@ ul li a {
 
     // Crate Smooth Scrolling 
 
-    $("#one").on('click',function() {
+    $("#numberone").on('click',function() {
         $('html, body').animate({
-            'scrollTop' : $("#proj1").position().top  - 150
+            'scrollTop' : $("#proj1").position().top  - 108
         });
     });
 
-    $("#two").on('click',function() {
+    $("#numbertwo").on('click',function() {
         $('html, body').animate({
-            'scrollTop' : $("#proj2").position().top - 150
+            'scrollTop' : $("#proj2").position().top - 108
         });
     });
 
-    $("#three").on('click',function() {
+    $("#numberthree").on('click',function() {
         $('html, body').animate({
-            'scrollTop' : $("#proj3").position().top  - 150
+            'scrollTop' : $("#proj3").position().top  - 108
         });
     });
     </script>
