@@ -1,326 +1,467 @@
+
 <!DOCTYPE html>
 <html lang="en" >
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <!-- font -->
-      <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="styles/main.css">
-      <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-      <style>
+<head>
 
-/*for button get a quote*/
-.cross_line{
-    display: inline-block;
-    position: relative;
-    padding: 1.5em 6em;
-    border-top: solid 2px #000;
-    border-bottom: solid 2px #000;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    margin-left: 85px;
-    text-decoration: none !important;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Latest compiled JavaScript -->
+    
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Start Slider.com HEAD section -->
+    
+    <!-- End Slider.com HEAD section -->
+
+    <style>
+
+/*slider css start*/
+
+    .container-fluid.main{
+  position: relative; /* To make the navbar positions relative to this container */
+  padding: 0;
 }
-#quote{
+
+.navbar-default {
+  background-image: none;
+  background-color: transparent; /* Make the menu become transparent */
+  border-radius: 0px;
+  border: 0;
+  box-shadow: none;
+  padding: 10px;
+  position: absolute; /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.navbar-default .navbar-brand {
+  font-family: Verdana;
+  color: #ffffff;
   font-size: 20px;
 }
 
-.cross_line:before, .cross_line:after{
-  content: '';
-  position: absolute;
-  top: -7px;
-  width: 2px;
-  height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color:#000;
-  transition: .8s;
-}
-.cross_line:before {left: 25px;}
-.cross_line:after {right: 25px;}
-.cross_line:hover:before{
-  top: 0px;
-  left:0;
-  height: 100%;
-}
-.cross_line:hover:after{
-  top: 0px;
-  right: 0;
-  height: 100%;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
 
-/*End*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
 
-  html{
-    overflow-x: hidden;
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.carousel .background {
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+@media (max-width:991px) {
+  .carousel .background {
+    background-size: cover; /* To make the background image looks good */
   }
+}
 
-  body{
-    font-family: 'Bitter', serif;
+.carousel .background.a {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://static.pexels.com/photos/92090/pexels-photo-92090-large.jpeg");
+}
 
+.carousel .background.b {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://static.pexels.com/photos/93750/pexels-photo-93750-large.jpeg");
+}
+
+.carousel .background.c {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://static.pexels.com/photos/76827/bahia-ocean-bay-boat-76827-large.jpeg");
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition: opacity 0.5s; /* The 0.5s describes the duration to make the opacity from 0 to 1 */
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+/* CSS Hack to trigger GPU for smooth transition */
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
-  .ocean_freight ul{
-    display: inline-table;
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
-
-  .ocean_freight{
-    padding:30px 40px 30px 0;
-    font-size: 20px;
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
+}
+/* CSS Hack to trigger GPU for smooth transition */
 
-  .ocean_freight h2{
-    font-weight: 700;
-    color:#022638;
-  }
-
-  .row_one{
-    background-color:#fff;
-  }
- 
-/*SideBar Nav*/
-
-
-
-.sidebar {
-  margin: 50px 9px;
-  padding: 0;
-  /*width: 330px;*/
-  width:90%;
-  background-color: #f1f1f1;
-  height: 100%;
-  overflow: auto;
-  border:2px solid #022638;
+.covertext {
+  position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
+  top: 200px; /* The distance between the div with the top of document */
+  left: 0px; /* Make the div full width */
+  right: 0px; /* Make the div full width */
 }
 
-
-
-
-
-.sidebar a {
-  display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    /* text-align: center; */
-     text-transform: capitalize; 
-    font-size: 14px;
-    font-weight: 700;
-    border-bottom: 0px solid #000000;
-}
-
-.sidebar a.active {
-  background-color: #022638;
-  color: #fff;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color:#191919;
-  color: #fff;
-}
-
-.ocean_freight li::before{
-  content:url("assets/dot.png");
-}
-
-div.content {
-  padding: 1px 16px;
-}
-
-.inner-banner{
-    height: 400px;
-    background: rgba(255, 255, 255, 0.5) url('assets/FREIGHT MANAGEMENT HOME.jpg') no-repeat 0 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.hero-text {
+.title {
+  font-family: Verdana;
+  font-weight: 600;
+  font-size: 60px;
+  color: #ffffff;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
 }
 
+.subtitle {
+  font-family: Verdana;
+  font-size: 23px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.explore {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.explore .btn-lg,
+.explore .btn-lg:hover {
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 22px;
+  background-image: none;
+  background-color: #FF4000;
+  border-color: #FF4000;
+  color: #ffffff;
+}
+
+.btn,
+.btn:hover {
+  border-radius: 0px;
+  background-image: none;
+  background-color: #FF4000;
+  border-color: #FF4000;
+  color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  color: #ffffff;
+  outline: none;
+}
+/*slider css*/
+
+
+ul li a {
+    text-transform: uppercase;
+    color: #022638;
+}
+.asidesection{
+  background-image: url(assets/projecthome.jpg);
+
+}
+.firstsection{
+  background-image: url(assets/bg.jpg);
+  height: 592px;
+  
+}
+.firstsec-title{
+ text-align: center;
+ margin: 110px 0px;
+ color: #ffffff;
+}
+.box-title{
+      padding: 64px 0px;
+    text-align: center;
+    color: #ffffff;
+}
 </style>
-   </head>
-   <body translate="no" >
-      <header>
-         <div class="container-fluid">
-            <ul style="float:right;">
-               <li><a href="" style="text-transform: lowercase;"><span class="glyphicon glyphicon-envelope">&nbsp;</span>contact@ascent.com</a></li>
-               <li><a href=""><span class="glyphicon glyphicon-phone-alt"> 044-4088-0000 </a></li>
-               <li><a href="getaquote.html"><button class="btn btn-primary">Get a Quote</button></a></li>
-            </ul>
-         </div>
-         <nav>
-            <h1>
-               <a href="index.html"><img src="assets/logo.png" class="logo"></a>
-            </h1>
-            <div class="menu_items"></div>
-            <span class="nav_items">
-               <ul style="padding-left: 150px;">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services </a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="services.html">Services </a></li>
-                  <li><a href="#">Portfolio</a></li>
-               </ul>
-            </span>
-            <button class="toggle-menu" aria-label="Responsive Navigation Menu">☰</button>
-         </nav>
-      </header>
 
-      <section class="inner-banner" >
-        <div class="hero-text">
-          <h1 style="font-size:50px">Services</h1>
-        </div>
-      </section>
+</head>
 
-      <div class="row row_one">
-        <div class="col-md-4 col-sm-12 ">
-           <div class="sidebar">
-           <a  href="services.html">Ocean Freight <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
-           <a href="airfreight.html">Air Freight <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
-           <a href="importexport.html">Import/Export Services <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
-           <a class="active" href="transport.html">Transport Services <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
-           <a href="export.html">Export services<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
-           <a href="insurance.html">Cargo Insurance<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
-           </div>
-           <p><a href="getaquote.html" class="cross_line"><span id="quote"> Get a quote</span></a></p>
-        </div>
-        
-      <div class="col-md-8 col-sm-12 content ocean_freight" >
-        <h2>Transport Services</h2>
-        <p>Ascent excels pick up and Drop service worldwide for containerised and, Over dimension Movement, with vehicles available 24/7 in all our locations and agent locations, Rail movements interstate, ounties or even inter continent, for any cargo size from small box to Mega Equipments.</p>
+<body translate="no">
 
-        <p><b> services include:</b> </p>
+  <header>
 
-        <ul>
-          <li>&nbsp;&nbsp;One source for all of your worldwide transportation needs</li>
-          <li>&nbsp;&nbsp;Offering individual or integrated services </li>
-          <li>&nbsp;&nbsp;Shipment visibility and materials tracking capability Our service covers. </li> 
-          <li>&nbsp;&nbsp;Small Parcel Pick-up and delivery</li>
-          <li>&nbsp;&nbsp;Container Pick-up and delivery </li>
-          <li>&nbsp;&nbsp;High bed, Low Bed and Semi Low Bed Movement</li> 
-          <li>&nbsp;&nbsp;ODC Movement </li>
-          <li>&nbsp;&nbsp;Rail and road combo</li>
-          <li>&nbsp;&nbsp;Inter country/Continents</li>
-          <li>&nbsp;&nbsp;Temperature Controlled movement </li>
-          <li>&nbsp;&nbsp;Escort for Cargo Services </li>
-          <li>&nbsp;&nbsp;Armed Escort for critical locations</li>
+    <div class="container-fluid">
+      <ul style="float:right;">
+        <li><a href="" style="text-transform: lowercase; color: #022638;"><span class="glyphicon glyphicon-envelope">&nbsp;</span>contact@ascent.com</a></li>
+        <li><a href="" style="color: #022638;"><span class="glyphicon glyphicon-phone-alt"> 044-4088-0000 </a></li>
+
+        <li><a href="getaquote.html"><button class="btn btn-primary">Get a Quote</button></a></li>
+
+      </ul>
+    </div>
+  <nav>
+    <h1>
+      <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+    </h1>
+    <div class="menu_items"></div>
+    <span class="nav_items">
+    <ul style="padding-left: 150px;">
+      <li><a href="#">About</a></li>
+      <li><a href="services.html">Services </a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Services </a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul></span>
+    <button class="toggle-menu" aria-label="Responsive Navigation Menu">☰</button>
+  </nav>
+</header>
+
+<section>
+  <div class="container-fluid main">
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="#">Website</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
-       
       </div>
     </div>
+  </nav>
 
-      </section>
-      <footer class="section footer-classic context-dark bg-image">
-         <div class="container" >
-            <div class="row row-30">
-               <div class="col-md-4 col-xl-5">
-                  <div class="pr-xl-4">
-                     <a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                     <h3>Who We Are..?</h3>
-                     <p>Ascent Global Shipping is the brainchild of an experienced team who are passionate about shipping and logistics. Flexibility and ability to bring logistics solutions both in the local market and to our world-wide clients with true value for money and on-time execution formulates our core strength. </p>
-                     <!-- Rights-->
-                     <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
-                  </div>
-               </div>
-               <div class="col-md-4" style="padding-top:40px; ">
-                  <!-- <h3>Contacts</h3> -->
-                  <dl class="contact-list">
-                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
-                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
-                     <dd>Chennai, Tamilnadu</dd>
-                  </dl>
-                  <dl class="contact-list">
-                     <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
-                     <dd><a href="mailto:#">shipping@ascent.com</a></dd>
-                  </dl>
-                  <dl class="contact-list">
-                     <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
-                     <dd><a href="tel:#"> 044 4088 0000</a>
-                     </dd>
-                  </dl>
-               </div>
-               <div class="col-md-4" style="padding-top:40px; ">
-                  <!-- <h3>Contacts</h3> -->
-                  <dl class="contact-list">
-                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
-                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
-                     <dd>Chennai, Tamilnadu</dd>
-                  </dl>
-                  <dl class="contact-list">
-                     <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
-                     <dd><a href="mailto:#">shipping@ascent.com</a></dd>
-                  </dl>
-                  <dl class="contact-list">
-                     <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
-                     <dd><a href="tel:#"> 044 4088 0000</a>
-                     </dd>
-                  </dl>
-               </div>
+  <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active background a"></div>
+      <div class="item background b"></div>
+      <div class="item background c"></div>
+    </div>
+  </div>
+  
+  <div class="covertext">
+    <div class="col-lg-10" style="float:none; margin:0 auto;">
+      <h1 class="title">ELINE</h1>
+      <h3 class="subtitle">A Tidy, Clean, Easy-to-Use, and Responsive Landing Page Template</h3>
+    </div>
+    <div class="col-xs-12 explore">
+      <a href="#"><button type="button" class="btn btn-lg explorebtn">EXPLORE</button></a>
+    </div>
+  </div>
+  
+</div>
+
+</section>
+
+<section  style="text-align: center;
+   margin-bottom: 103px;
+   margin-top: 50px;">
+  <div class="col-md-12">
+  
+    <div id="one" class="col-md-4">
+         <h2>INTERNATIONAL FREIGHT MGMT </h2>
+         <span class="glyphicon glyphicon-chevron-down" style="font-size: 40px;"></span>
+    </div>
+
+    <div id="two" class="col-md-4">
+        <h2>PROJECT CARGO WORLDWIDE </h2>
+        <span class="glyphicon glyphicon-chevron-down" style="font-size: 40px;"></span>
+    </div>
+
+    <div id="three" class="col-md-4">
+        <h2>LINER AGENCY</h2>
+        <span class="glyphicon glyphicon-chevron-down" style="font-size: 40px;"></span>
+    </div>
+    </div>
+</section>
+
+
+
+
+ 
+ 
+     <div class="col-md-6 firstsection">
+     <div class="firstsec-title">
+      <h2>International Freight Management</h2> 
+
+    </div>
+   </div>
+   
+   
+    <div class="col-md-6 asidesection">
+      <div class="col-md-4 sepimg15">
+        <div class="box-title">
+        <h4>Ocean Freight</h4>
+      </div>
+      </div>
+       <div class="col-md-4 sepimg15">
+          <div class="box-title">
+        <h4>Air Freight</h4>
+      </div>
+    </div>
+       <div class="col-md-4 sepimg15">
+          <div class="box-title">
+       <h4>Import/Export Services and Customs Brokerage</h4>
+      </div>
+    </div>
+       <div class="col-md-4 sepimg15">
+          <div class="box-title">
+        <h4>Transport Services</h4>
+      </div>
+    </div>
+       <div class="col-md-4 sepimg15">
+          <div class="box-title">
+       <h4>Export packing services</h4>
+      </div>
+    </div>
+       <div class="col-md-4 sepimg15">
+          <div class="box-title">
+        <h4>Cargo Insurance</h4>
+      </div>
+    </div>
+       
+
+    
+   </div>
+ 
+
+<footer id="footer" class="section footer-classic context-dark bg-image">
+        <div class="container" >
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <h3>Who We Are..?</h3>
+                <p>Ascent Global Shipping is the brainchild of an experienced team who are passionate about shipping and logistics. Flexibility and ability to bring logistics solutions both in the local market and to our world-wide clients with true value for money and on-time execution formulates our core strength. </p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
             </div>
-         </div>
+            <div class="col-md-4" style="padding-top:40px; ">
+              <!-- <h3>Contacts</h3> -->
+              <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
+                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
+                     <dd>Chennai, Tamilnadu</dd>
+                  </dl>
+              <dl class="contact-list">
+                <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
+                <dd><a href="mailto:#">shipping@ascent.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
+                <dd><a href="tel:#"> 044 4088 0000</a>
+                </dd>
+              </dl>
+            </div>
+             <div class="col-md-4" style="padding-top:40px; ">
+              <!-- <h3>Contacts</h3> -->
+              <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
+                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
+                     <dd>Chennai, Tamilnadu</dd>
+                  </dl>
+              <dl class="contact-list">
+                <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
+                <dd><a href="mailto:#">shipping@ascent.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
+                <dd><a href="tel:#"> 044 4088 0000</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        
       </footer>
-   </body>
+
+    <script>
 
 
+    // Crate Smooth Scrolling 
 
-<style>
+    $("#one").on('click',function() {
+        $('html, body').animate({
+            'scrollTop' : $("#proj1").position().top  - 150
+        });
+    });
 
-@media screen and (max-width: 365px){
-  .sidebar{
-    margin:9px 0px;
-    width: 100%;
-  }
-  .cross_line {
-    margin-left: -17px;
-  }
-  .ocean_freight {
-    margin-left: 16px;
-  }
-  div.content {
-  padding: 1px 10px;
-  }
-}
+    $("#two").on('click',function() {
+        $('html, body').animate({
+            'scrollTop' : $("#proj2").position().top - 150
+        });
+    });
 
-@media screen and (max-width: 700px){
-  .ocean_freight ul{
-    margin-left: 50px;
-  }
-  .ocean_freight h2{
-    margin-left: 20px;
-  }
-  .ocean_freight p{
-    margin-left: 20px;
-  }
-  .sidebar{
-    width: 100%;
-    margin:50px 0;
-  }
-  .cross_line {
-    left: 18%;
-  }
-}
+    $("#three").on('click',function() {
+        $('html, body').animate({
+            'scrollTop' : $("#proj3").position().top  - 150
+        });
+    });
+    </script>
+    <!-- End Smooth Scrlling -->
 
-@media screen and (min-width: 1900px){
-  .sidebar{
-    margin: 52px 52px;
-  }
-}
-</style>
+   <script>
+     /* When your mouse cursor enter the background, the fading won't pause and keep playing */ 
+    $('.carousel').carousel({
+        pause: "false" 
+    });
+   </script>
+   
+</body>
+
 </html>
+ 
