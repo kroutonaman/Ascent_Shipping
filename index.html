@@ -26,12 +26,24 @@
 
 @media screen and (min-width: 1900px){
    .animate-arrow {
-    left: 7px;
-    padding: 1px 665px;
+    margin-left: 105px;
+  }
+
+  
 }
 
-}
+/*@media(min-width: 1900px){
+  .carousel_img{
+    height: 660px;
+    width:100%;
+  }  
+}*/
 
+
+
+html{
+  overflow-x: hidden;
+}
 
 ul li a {
     text-transform: uppercase;
@@ -111,6 +123,8 @@ ul li a {
 
   opacity: 0.7;
 }*/
+
+
 .boximg {
   position: relative;
   
@@ -189,8 +203,14 @@ ul li a {
 }
 .animate-arrow{
       left: 10px;
-    padding: 1px 196px;
+    padding: 1px 170px;
 }
+
+.carousel-inner>.item>img{
+  height: 460px;
+  width:100%;
+}
+
 
 /*=============== //Home-team ===============*/
 
@@ -200,39 +220,45 @@ ul li a {
 
 <body translate="no">
 
-  <header>
-
+   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-      <ul style="float:right;">
-        <li><a href="" style="text-transform: lowercase; color: #022638;"><span class="glyphicon glyphicon-envelope">&nbsp;</span>contact@ascent.com</a></li>
-        <li><a href="" style="color: #022638;"><span class="glyphicon glyphicon-phone-alt"> 044-4088-0000 </a></li>
-
-        <li><a href="getaquote.html"><button class="btn btn-primary">Get a Quote</button></a></li>
-
+     <!--  <h1>hello world</h1>
+      <h1>hello world</h1>
+      <h1>hello world</h1> -->
+    </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="assets/logo.png" style="height: 65px; width: 180px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
-
-  <nav>
-    <h1>
-      <a href="index.html"><img src="assets/logo.png" class="logo"></a>
-    </h1>
-    <div class="menu_items"></div>
-    <span class="nav_items">
-     <ul style="padding-left: 150px;">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services </a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="services.html">Services </a></li>
-                  <li><a href="#">Portfolio</a></li>
-               </ul>
-               <button class="toggle-menu" aria-label="Responsive Navigation Menu">☰</button>
-  </nav>
-</header>
+  </div>
+</nav>
+  
 
 <section>
 <div class="container-fluid" style="margin-bottom: -50px;">
-  <h2>Carousel Example</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -244,15 +270,15 @@ ul li a {
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="assets/LINER SERVICE OP2.jpg" style="width:100%; height: 600px;">
+        <img class="carousel_img" src="assets/LINER SERVICE OP2.jpg">
       </div>
 
       <div class="item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Arabian_Sea_-_n22e70.jpg/1200px-Arabian_Sea_-_n22e70.jpg" alt="Chicago" style="width:100%; height: 600px;">
+        <img class="carousel_img" src="assets/projecthome.jpg" alt="Chicago">
       </div>
     
       <div class="item">
-        <img src="assets/LINER HOME.jpg" alt="New york" style="width:100%; height: 600px;">
+        <img class="carousel_img" src="assets/LINER HOME.jpg" alt="New york">
       </div>
     </div>
 
