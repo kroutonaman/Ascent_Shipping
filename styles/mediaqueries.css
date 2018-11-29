@@ -31,8 +31,12 @@
     padding: 8px 7px 5px 1px;
     display: inline-block;
 }
+.mob-logo img {
+	width: 183px;
+    margin-top: -32px;
+} 
 
-
+}
 /*Larger Screen Media Queries*/
 @media(min-width: 1600px){
     .animate-arrow {

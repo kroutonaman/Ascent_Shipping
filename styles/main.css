@@ -73,7 +73,7 @@ body {
 header {
   z-index: 1000;
   position: fixed;
-  height: 100px;
+  height: 46px;
   top: 0;
   width: 100%;
   box-sizing: border-box;
