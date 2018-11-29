@@ -40,7 +40,7 @@
 /*Larger Screen Media Queries*/
 @media(min-width: 1600px){
     .animate-arrow {
-    margin: 0 150px !important;
+    margin: 0 89px !important;
     }
 
     .home-doctors h3{
