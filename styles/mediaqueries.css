@@ -4,8 +4,10 @@
       width:75%;
     }
  }
- /*for sidebar inner pages larger screens*/
 
+ /*END for sidebar inner pages larger screens*/
+
+}
 
 @media screen and (max-width: 600px) {
 
