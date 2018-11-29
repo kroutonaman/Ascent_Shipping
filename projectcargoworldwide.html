@@ -58,6 +58,10 @@
   height: 100%;
 }
 
+.ocean_freight h2{
+  margin-top: 45px;
+}
+
 
 /*End*/
 
@@ -102,10 +106,6 @@
   border:2px solid #022638;
 }
 
-
-
-
-
 .sidebar a {
   display: block;
     color: black;
@@ -135,178 +135,6 @@
 div.content {
   padding: 1px 16px;
 }
-
-.inner-banner{
-    height: 400px;
-    background: rgba(255, 255, 255, 0.5) url('assets/FREIGHT MANAGEMENT HOME.jpg') no-repeat 0 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-/*for button get a quote*/
-.cross_line{
-    display: inline-block;
-    position: relative;
-    padding: 1.5em 6em;
-    border-top: solid 2px #000;
-    border-bottom: solid 2px #000;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    margin-left: 85px;
-    text-decoration: none !important;
-
-}
-#quote{
-  font-size: 20px;
-}
-
-.cross_line:before, .cross_line:after{
-  content: '';
-  position: absolute;
-  top: -7px;
-  width: 2px;
-  height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color:#000;
-  transition: .8s;
-}
-.cross_line:before {left: 25px;}
-.cross_line:after {right: 25px;}
-.cross_line:hover:before{
-  top: 0px;
-  left:0;
-  height: 100%;
-}
-.cross_line:hover:after{
-  top: 0px;
-  right: 0;
-  height: 100%;
-}
-
-
-/*End*/
-
-  html{
-    overflow-x: hidden;
-  }
-
-  .ocean_freight ul{
-    display: inline-table;
-  }
-
-  .ocean_freight{
-    padding:30px 40px 30px 0;
-    font-size: 20px;
-
-  }
-
-  .ocean_freight h2{
-    font-weight: 700;
-    color:#022638;
-  }
-
-  .row_one{
-    background-color:#fff;
-  }
- 
-/*SideBar Nav*/
-
-@media(max-width: 400px){
-  .row_one{
-    margin-left: -50px;
-  }
-
-  .content{
-    margin-left: 70px;
-  }
-
-  .sidebar{
-    margin:12px 47px;
-  }
-}
-
-@media(max-width: 700px){
- 
-  .ocean_freight{
-    margin-left:50px;
-  }
-
-  .ocean_freight ul{
-    margin-left: 50px;
-  }
-
-}
-
-
-.sidebar {
-  margin: 50px 70px;
-  padding: 0;
-  width: 330px;
-  background-color: #f1f1f1;
-  height: 100%;
-  overflow: auto;
-  border:2px solid #022638;
-}
-
-.sidebar a {
-  display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    /* text-align: center; */
-     text-transform: capitalize; 
-    font-size: 14px;
-    font-weight: 700;
-    border-bottom: 0px solid #000000;
-}
-
-.sidebar a.active {
-  background-color: #022638;
-  color: #fff;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color:#191919;
-  color: #fff;
-}
-
-.ocean_freight li::before{
-  content:url("assets/dot.png");
-}
-
-div.content {
-  padding: 1px 16px;
-}
-
-/*@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}*/
-
-/*@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}*/
-/*End Sidebar Nav*/
-
 
 .inner-banner{
     height: 400px;
