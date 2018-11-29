@@ -1,3 +1,12 @@
+/*for sidebar inner pages larger screens*/
+@media screen and (min-width: 1900px) {
+    div.sidebar{
+      width:75%;
+    }
+ }
+ /*for sidebar inner pages larger screens*/
+
+
 @media screen and (max-width: 600px) {
 
  .animate-arrow {
