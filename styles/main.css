@@ -9,11 +9,8 @@
 
 /*Footer*/
 .footer-classic{
-  /*background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://www.desktopbackground.org/p/2010/08/18/66072_111-cruise-ship-hd-wallpapers_3840x2160_h.jpg) center center;*/
   background:linear-gradient(0deg,rgba(2,38,56,0.8),rgba(0,0,0,0.8)),url(https://www.desktopbackground.org/p/2010/08/18/66072_111-cruise-ship-hd-wallpapers_3840x2160_h.jpg) center center;
   background-size: cover;
-  /*background: #022638*/
-
 } 
 
 p{
@@ -561,3 +558,8 @@ vertical-align:middle;
  .link{
   color: #ffffff;
  }
+
+
+
+
+
