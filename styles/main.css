@@ -1,5 +1,51 @@
+/*header new*/
+
+ul#menu li {
+    display:inline;
+    color:#000;
+    font-size: 18px;
+    font-weight: 700;
+    float:right;
+}
+.dropdown-menu a{
+    font-size:16px;
+    font-weight: 600;
+}
+
+.navbar{
+ background-color: #fff;
+ color:#000;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    text-decoration: none;
+    background-color:rgba(0,0,0,0.7);
+    color: #fff;
+}
+
+@media(max-width: 768px){
+  ul#menu li{
+    display: none;
+  }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+   ul.nav.navbar-nav{
+    margin-left: 190px;
+   }
+}​
+
+/*header new ends here*/
+
 /* Navigation */
-.navbar-default {
+/*.navbar-default {
   background-color: #011034;
   border-color: #011034;
   padding: 10px 0px 10px 0;
@@ -82,8 +128,8 @@
 .navbar-default .navbar-link:hover {
   color: #022638;
 }
-
-@media (max-width: 767px) {
+*/
+/*@media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
@@ -97,8 +143,8 @@
     color: #022638;
     background-color: #022638;
   }
-}
-.navbar-fixed-top {
+}*/
+/*.navbar-fixed-top {
     top: 51px;
    
 }
@@ -115,13 +161,13 @@
 }
 .navbar-default .navbar-nav > li > .dropdown-menu {
     background-color: #022638;
-}
+}*/
 /*Start Box Body*/
-.body-content .col-md-6{
+/*.body-content .col-md-6{
   padding-right: 0px;
   padding-left:0px;
 }
-
+*/
 /*End Box Body*/
 
 /*Footer*/
@@ -149,20 +195,20 @@ p{
 
       /*RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul li a{
+/*ul li a{
   text-transform: uppercase;
   color: #022638;
 
-}
+}*/
 
 .menu_items ul{
   padding-top: 15px;
 
 }
 
-body,h1,ul {
+/*body,h1,ul {
   margin: 0;
-}
+}*/
 
 li {
   list-style-type: none;
@@ -172,10 +218,10 @@ h1 {
   font-size: 1.5rem;
 }
 
-a {
+/*a {
   text-decoration: none;
   color: #fff;
-}
+}*/
 
 
 body {
@@ -186,7 +232,7 @@ body {
 
 /* HEADER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+/*
 header {
   z-index: 1000;
   position: fixed;
@@ -199,11 +245,9 @@ header {
  
   font-weight: bold;
 
- 
-
 }
-
-nav {
+*/
+/*nav {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -232,7 +276,7 @@ li a {
   color: #fff;
   margin: 10px 10px 0 0;
   transition: margin .2s;
-}
+}*/
 
 
 
@@ -262,7 +306,7 @@ li a {
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media screen and (max-width: 1060px) {
+/*@media screen and (max-width: 1060px) {
   header {
     padding: 10px;
   }
@@ -279,11 +323,14 @@ li a {
   .toggle-menu {
     display: block;
   }
-}
+}*/
 
 
 /* STYLES FOR THE COUNTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/*Above code for the old header*/
 
 .counter {
   visibility: hidden;

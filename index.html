@@ -3,16 +3,8 @@
 <html lang="en" >
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <!-- jQuery library -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- Latest compiled JavaScript -->
-    <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest CDN -->
@@ -23,29 +15,38 @@
      <link rel="stylesheet" type="text/css" href="styles/mediaqueries.css">
     <style>
 
+    html{
+      overflow-x: hidden;
+    }
 
-
- @media screen and (min-width:1400px){
-   
-img.carousel_img{
-  height: 500px;
-  width: 100%;
+@media screen and (min-width: 1900px){
+   .animate-arrow {
+    left: 7px;
+    margin: 1px 78px;
+  }    
 }
+
+@media (min-width: 1200px) and (max-width:1500px){
+  img.img-responsive{
+      height: 450px !important;
+      width: 100% !important;
+    }
+}
+
 
 ul li a {
     text-transform: uppercase;
     color: #022638;
 }
+
 .asidesection{
   background: linear-gradient(0deg,rgba(198, 200, 202, 0.8),rgba(0, 0, 0, 0.8)),url(assets/projecthome.jpg) center center;
   padding: 75px 10px;
   
-
 }
 .firstsection{
    background:linear-gradient(0deg,rgba(2,38,56,0.8),rgba(0,0,0,0.8)),url(assets/Shipping-Banner12.jpg) center center;
   height: 600px;
-  
   
 }
 .firstsec-title{
@@ -59,33 +60,17 @@ ul li a {
     color: #ffffff;
 }
  
-
-
-
-/*.animate {
-    -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}*/
-
 /*=============== Home-team ===============*/
-
 
 .home-doctors{
  padding: 28px 6px 5px 19px;
 }
-
-
-
 
 .home-doctors img {
  width: 192px;
  height: 192px;
   
 }
-
 
 .home-doctors h3{
  position: absolute;
@@ -95,28 +80,15 @@ ul li a {
     text-align: center;
     opacity: 0;
     z-index: 1;
-    /* background: #707171; */
     color: #ffffff;
     padding: 7px 0px;
-    /* border: 1px solid rgba(255, 255, 255, 0.33); */
 }
 
-
-
-
-
-/*.doc-item .doc-img{
-   
-
-  opacity: 0.7;
-}*/
 .boximg {
   position: relative;
-  
   border: 1px solid #333;
   margin: 2%;
   overflow: hidden;
-  /*width: 540px;*/
 }
 .boximg img {
   max-width: 100%;
@@ -136,7 +108,6 @@ ul li a {
   opacity: 1;
       font-size: 20px;
 }
-
 .chevron {
  position: absolute;
     width: 30px;
@@ -169,6 +140,7 @@ ul li a {
   width: 50%;
   transform: skewY(-30deg);
 }
+
 @keyframes move-chevron {
   25% {
     opacity: 1;
@@ -186,199 +158,69 @@ ul li a {
     transform: translateY(4.8rem) scale(0.5);
   }
 }
+
+/*=============== //Home-team ===============*/
+
 .animate-arrow{
       left: 10px;
     padding: 1px 196px;
 }
-
-/*-----------------------------*/
-/* Navigation css starts here */
-/*---------------------------*/
-
-.navbar-default {
-  background-color: #011034;
-  border-color: #011034;
-  padding: 10px 0px 10px 0;
-  letter-spacing:1px;
-  font-weight:800;
-  text-transform: uppercase;
-      webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-    -ms-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-    -o-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-}
-.navbar-default {
-  background-color: #011034;
-  border-color: #011034;
-}
-.navbar-default .navbar-brand {
-  color: #ffffff;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #022638;
-}
-.navbar-default .navbar-text {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #022638;
-}
-
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #ffffff;
-  line-height: 1.85em;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-  color: #ffffff;
-  background-color: #022638;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
-  background-color: #011034;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #022638;
-  background-color: #011034;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #022638;
-  background-color: #011034;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color: #ffffff;
-    background-color: #022638;
-}
-.navbar-default .navbar-toggle {
-  border-color: #011034;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #022638;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #022638;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #ffffff;
-}
-.navbar-default .navbar-link {
-  color: #ffffff;
-}
-.navbar-default .navbar-link:hover {
-  color: #022638;
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #022638;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #022638;
-    background-color: #022638;
-  }
-}
-.navbar-fixed-top {
-    top: 51px;
-   
-}
-.navbar-default {
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
-.navbar-default .navbar-nav > .active > a {
-  color: #ffffff;
-    background-color: #022638;
-}
-.navbar-default .navbar-nav > li > a {
-    color: #022638;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu {
-    background-color: #022638;
-}
-
-/*Navigation CSS ends herer*/
-/*------------------------*/
-
-
-/*=============== //Home-team ===============*/
 
 </style>
 
 </head>
 
 <body translate="no">
-
-
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-         <ul style="float:right;">
-        <li><a href="" style="text-transform: lowercase; color: #022638;"><span class="glyphicon glyphicon-envelope">&nbsp;</span>contact@ascent.com</a></li>
-        <li><a href="" style="color: #022638;"><span class="glyphicon glyphicon-phone-alt"> 044-4088-0000 </a></li>
-
-        <li><a href="getaquote.html"><button class="btn btn-primary">Get a Quote</button></a></li>
-
-      </ul>
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand mob-logo" href="index.html"><img style="width: 222px;" src="assets/logo.png"></a>
+<!-- header testing starts here -->
+ <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="col-md-3">
+       <a class="navbar-brand" href="#">
+       <img src="assets/logo.png" style="height: 80px; width: 200px;">
+       </a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      
-      <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
+    <div class="col-md-9">
+      <div class="col-md-12">
+      <ul id="menu" style="padding: 14px;">
+        <li>&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span>044 4088 0000</li>&nbsp;  &nbsp;&nbsp;
+        <li><span class="glyphicon glyphicon-inbox"></span> shipping@ascent.com </li>&nbsp;
+      </ul>
+      </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>      --> 
+        <span><img src="assets/collapse2.png" style="width: 30px;height: 30px;"><span>                 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="services.html">International Freight Mgmt</a></li>
-            <li><a href="projectcargoworldwide.html">Project Cargo Worldwide</a></li>
-            <li><a href="linearagency.html">Liner Agency</a></li>
-        
+            <li><a href="#">International Freight Management</a></li>
+            <li><a href="#">Project Cargo Worldwide</a></li>
+            <li><a href="#">Linear Agency</a></li>
           </ul>
         </li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Services</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-       
-        
-       
-        
-        
       </ul>
-    </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-collapse -->
-  </nav>
-
-
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+      <li id="quote" class="quote" style="background-color:#0076bf;"><a href="getaquote.html" style="color:#fff;"><span class="glyphicon glyphicon-log-in"></span> Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+  
+  
+<!-- header testing end -->
 <section>
-<div class="container-fluid" style="margin-bottom: -50px; margin-top: 50px;">
- 
+<div class="container-fluid" style="margin-bottom: -50px; margin-top:100px;">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -390,15 +232,15 @@ ul li a {
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img class="carousel_img" src="assets/LINER SERVICE OP2.jpg" >
+        <img class="img-responsive" class="slideone" src="assets/LINER SERVICE OP2.jpg" style="width:100%; max-height: 800px;">
       </div>
 
       <div class="item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Arabian_Sea_-_n22e70.jpg/1200px-Arabian_Sea_-_n22e70.jpg" alt="Chicago">
+        <img class="img-responsive" class="slidetwo" src="assets/LINER OP3.jpg" alt="Chicago" style="width:100%; max-height: 800px;">
       </div>
     
       <div class="item">
-        <img src="assets/LINER HOME.jpg" alt="New york">
+        <img class="img-responsive" class="slidethree" src="assets/LINER HOME.jpg" alt="New york" style="width:100%; max-height: 800px;">
       </div>
     </div>
 
@@ -470,7 +312,7 @@ ul li a {
                                 
                                           <figure class="boximg">
                                     <a href="importexport.html">
-                                        <h3 class="animate social-lists animate">Ocean Freight  </h3>
+                                        <h3 class="animate social-lists animate">Import/Export Services and Customs Brokerage  </h3>
                                     <img  src="assets/bg.jpg" class="doc-img animate " alt="doctor-2"> 
                                     </a>
                             </figure>
@@ -484,7 +326,7 @@ ul li a {
                                 
                                           <figure class="boximg">
                                     <a href="importexport.html">
-                                        <h3 class="animate social-lists animate">Air Frieght</h3>
+                                        <h3 class="animate social-lists animate">Import/Export Services and Customs Brokerage  </h3>
                                     <img  src="assets/bg.jpg" class="doc-img animate " alt="doctor-2"> 
                                     </a>
                             </figure>
@@ -769,7 +611,7 @@ ul li a {
       </div>
     
       </section>
-<footer id="footer" class="section footer-classic context-dark bg-image">
+<footer id="footer" class="section footer-classic context-dark bg-image" style="background-color: #000;">
         <div class="container" >
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
