@@ -32,6 +32,10 @@
 
 }
 
+p, li{
+    margin-right: 9px;
+}
+
 .firstsec-title {
     text-align: center;
     margin: 62px 0px;
@@ -72,6 +76,11 @@
     width: 146px;
     height: 146px;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 }
 /*Larger Screen Media Queries*/
 
