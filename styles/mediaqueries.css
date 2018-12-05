@@ -28,14 +28,36 @@
 
  .animate-arrow {
     left: 10px;
-    padding: 1px 182px !important;
+    padding: 1px 134px !important;
 
 }
+.numberone,.numbertwo,.numberthree h2 {
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 2px;
+    margin-bottom: 10px;
+}
+
+.navbar-toggle {
+   position: relative;
+   float: right;
+   padding: -18px 0px;
+   margin-top: -53px;
+   margin-right: -10px;
+   margin-bottom: 8px;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 4px;
+}
+/*p, li{
+    margin-right: 9px;
+}*/
 
 .firstsec-title {
     text-align: center;
     margin: 62px 0px;
-    padding: 100px 0px;
+    padding: 100px 0px; 
     color: #ffffff;
 }
 
@@ -45,8 +67,9 @@
 }
 
 .home-doctors {
-    padding: 8px 7px 5px 1px;
+    padding: 10px 10px 10px 10px;
     display: inline-block;
+    left: 62px;
 }
 .mob-logo img {
 	width: 183px;
@@ -72,6 +95,11 @@
     width: 146px;
     height: 146px;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 }
 /*Larger Screen Media Queries*/
 

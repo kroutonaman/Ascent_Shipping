@@ -17,55 +17,7 @@
       <style>
 
 
-/*for button get a quote*/
-.cross_line{
-    display: inline-block;
-    position: relative;
-    padding: 1.5em 6em;
-    border-top: solid 2px #000;
-    border-bottom: solid 2px #000;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    margin-left: 85px;
-    text-decoration: none !important;
-
-}
-#quote{
-  font-size: 20px;
-}
-
-.cross_line:before, .cross_line:after{
-  content: '';
-  position: absolute;
-  top: -7px;
-  width: 2px;
-  height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color:#000;
-  transition: .8s;
-}
-.cross_line:before {left: 25px;}
-.cross_line:after {right: 25px;}
-.cross_line:hover:before{
-  top: 0px;
-  left:0;
-  height: 100%;
-}
-.cross_line:hover:after{
-  top: 0px;
-  right: 0;
-  height: 100%;
-}
-
-.ocean_freight h2{
-  margin-top: 45px;
-}
-
-
-/*End*/
-
-  html{
+html{
     overflow-x: hidden;
   }
 
@@ -92,13 +44,9 @@
   }
  
 /*SideBar Nav*/
-
-
-
 .sidebar {
   margin: 50px 9px;
   padding: 0;
-  /*width: 330px;*/
   width:90%;
   background-color: #f1f1f1;
   height: 100%;
@@ -108,14 +56,13 @@
 
 .sidebar a {
   display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    /* text-align: center; */
-     text-transform: capitalize; 
-    font-size: 14px;
-    font-weight: 700;
-    border-bottom: 0px solid #000000;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  text-transform: capitalize; 
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 0px solid #000000;
 }
 
 .sidebar a.active {
@@ -137,12 +84,12 @@ div.content {
 }
 
 .inner-banner{
-    height: 400px;
-    background: rgba(255, 255, 255, 0.5) url('assets/FREIGHT MANAGEMENT HOME.jpg') no-repeat 0 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.5) url('assets/FREIGHT MANAGEMENT HOME.jpg') no-repeat 0 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .hero-text {
   text-align: center;
@@ -159,7 +106,7 @@ div.content {
       <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="col-md-3">
-       <a class="navbar-brand" href="#">
+       <a class="navbar-brand" href="index.html">
        <img src="assets/logo.png" style="height: 80px; width: 200px; margin-left: 20px;">
        </a>
     </div>
@@ -215,8 +162,12 @@ div.content {
           <a href="operations.html">RO RO Operations <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="factoryrelocation.html">Machinery and factory relocation <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
           <a href="eventlogistic.html">Event Logistics <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
+          <div class="well">
+           <a href="tel:04440880000" type="button" class="btn btn-primary btn-sm btn-block" style="text-align: left; background-color: #00a0e3;">Call: 044 4088 0000</a>
+           
+           <a href="getaquote.html" type="button" class="btn btn-primary btn-sm btn-block" style="text-align: left;background-color: #00a0e3;">Get a Quote</a>
+            </div>
         </div>
-           <p><a href="getaquote.html" class="cross_line"><span id="quote"> Get a quote</span></a></p>
       </div>
 
       <div class="col-md-8 col-sm-12 content ocean_freight">
@@ -235,7 +186,7 @@ div.content {
     </div>
 
       </section>
-      <footer class="section footer-classic context-dark bg-image">
+      <footer class="section footer-classic context-dark bg-image" style="background-color:#000;">
          <div class="container" >
             <div class="row row-30">
                <div class="col-md-4 col-xl-5">
@@ -292,11 +243,9 @@ div.content {
 @media screen and (max-width: 365px){
   .sidebar{
     margin:9px 0px;
-    width: 100%;
+    width: 90%;
   }
-  .cross_line {
-    margin-left: -17px;
-  }
+ 
   .ocean_freight {
     margin-left: 16px;
   }
@@ -305,7 +254,14 @@ div.content {
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 767px){
+  .sidebar{
+    width: 95%;
+    margin:50px 0;
+  }
+}
+
+@media screen and (max-width: 991px){
   .ocean_freight ul{
     margin-left: 50px;
   }
@@ -314,24 +270,49 @@ div.content {
   }
   .ocean_freight p{
     margin-left: 20px;
+    margin-right: 20px;
   }
   .sidebar{
     width: 100%;
     margin:50px 0;
   }
-  .cross_line {
-    left: 18%;
-  }
+  
 }
 
 @media screen and (min-width: 1900px){
   .sidebar{
     margin: 52px 52px;
   }
-   div.ocean_freight p{
-    padding-right:125px;
+ 
+  div.col-md-8.col-sm-12.content.ocean_freight{
+    margin-top:30px;
+    padding-right:95px;
   }
 
+}
+
+
+@media screen and (max-width:1500px){
+  p{
+    padding-right: 15px;
+  }
+  div.col-md-8.col-sm-12.content.ocean_freight{
+    margin-top:30px;
+  }
+
+  html{
+    overflow-x: hidden;
+  }
+}
+
+
+@media screen and (max-width:1900px){
+  p{
+    padding-right: 15px;
+  }
+  div.col-md-8.col-sm-12.content.ocean_freight{
+    margin-top:30px;
+  }
 }
 </style>
 </html>
